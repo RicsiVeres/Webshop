@@ -1,5 +1,9 @@
 .Product {
-  background-color: aliceblue;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 18%,
+    rgba(179, 247, 185, 1) 100%
+  );
   width: 28vw;
   max-height: 30vh;
   margin: 1rem;
@@ -8,6 +12,7 @@
   min-width: 50rem;
   max-height: 15rem;
   margin: 3rem;
+  z-index: -4;
 }
 .ProductImg {
   display: flex;
@@ -16,6 +21,7 @@
   min-height: 15rem;
   justify-content: right;
   margin-left: -40%;
+  z-index: 1;
 }
 .Information {
   display: block;
@@ -46,16 +52,36 @@
 }
 .Rendel {
   background: #8dc959;
-  border-radius: 0 3rem 0 0;
+  border-radius: 0 1rem 0 0;
   border: none;
   display: block;
   justify-content: center;
-  margin-top: 2.2rem;
+  margin-top: 2.8rem;
   margin-left: 0 auto;
   justify-content: center;
-  padding: 0.7rem 5rem;
+  padding: 0.5rem 5rem;
 }
+
 .Selected {
   border: 1px solid black;
   padding: 3px 5px;
+}
+.D {
+  font-size: 3rem;
+  color: #fff;
+}
+img {
+  max-width: 240px;
+}
+.SelectSize {
+  z-index: -1;
+  margin-left: 12rem;
+}
+.SelectSize button {
+  margin: 0 0.5rem;
+  background-color: #ffffff00;
+  font-size: 1.3rem;
+}
+.Rendel:hover {
+  background-color: #62a02c;
 }

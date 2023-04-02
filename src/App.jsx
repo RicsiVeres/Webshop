@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [size, setSize] = useState("");
+
+  const handleSizeClick = (selectedSize) => {
+    setSize(selectedSize);
+  };
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div>
+      <h2>Válassza ki a méretet:</h2>
+      <button
+        onClick={() => handleSizeClick("S")}
+        style={{ border: size === "S" ? "1px solid red" : "none" }}
+      >
+        S
+      </button>
+      <button
+        onClick={() => handleSizeClick("M")}
+        style={{ border: size === "M" ? "1px solid red" : "none" }}
+      >
+        M
+      </button>
+      <button
+        onClick={() => handleSizeClick("L")}
+        style={{ border: size === "L" ? "2px solid red" : "none" }}
+      >
+        L
+      </button>
+      <button
+        onClick={() => handleSizeClick("XL")}
+        style={{ border: size === "XL" ? "2px solid red" : "none" }}
+      >
+        XL
+      </button>
+      {size && <p>Kiválasztott méret: {size}</p>}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
