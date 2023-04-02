@@ -1,0 +1,62 @@
+.Product {
+  background-color: aliceblue;
+  width: 28vw;
+  max-height: 30vh;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  min-width: 50rem;
+  max-height: 15rem;
+  margin: 3rem;
+  zoom: 135%;
+}
+.ProductImg {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 15rem;
+  justify-content: right;
+  margin-left: -40%;
+}
+.Information {
+  display: block;
+  justify-content: left;
+}
+.Information h1 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 2rem;
+  font-size: 2rem;
+  max-height: 20%;
+}
+.Information h3 {
+  display: flex;
+  justify-content: left;
+  margin: 1rem 3.8rem;
+}
+.Information p {
+  display: flex;
+  justify-content: center;
+  margin-left: 8rem;
+}
+.Information p a {
+  margin: 0 1rem;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: center;
+}
+.Rendel {
+  background: #8dc959;
+  border-radius: 0 3rem 0 0;
+  border: none;
+  display: block;
+  justify-content: center;
+  margin-top: 2.2rem;
+  margin-left: 0 auto;
+  justify-content: center;
+  padding: 0.7rem 5rem;
+}
+.Selected {
+  border: 1px solid black;
+  padding: 3px 5px;
+}
