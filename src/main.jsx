@@ -1,9 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import Home from './home'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Home from "./Home";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <div>
-  <Home />
+    <Home />
   </div>
-)
+);
